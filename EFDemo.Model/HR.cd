@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EFDemo.Model.Employee">
+    <Position X="5.75" Y="0.75" Width="1.75" />
+    <AssociationLine Name="Projects" Type="EFDemo.Model.EmployeeProject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.359" Y="2.623" />
+        <Point X="6.359" Y="3.312" />
+        <Point X="4" Y="3.312" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAEAAAAAAAAQAAAAABAAAAAAAIAACBQA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Title" />
+      <Property Name="Manager" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Projects" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFDemo.Model.Manager">
+    <Position X="10.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAEAAA=</HashCode>
+      <FileName>Manager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TeamMember" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFDemo.Model.Project">
+    <Position X="5.75" Y="4.75" Width="1.75" />
+    <AssociationLine Name="Members" Type="EFDemo.Model.ProjectMember" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.938" Y="4.75" />
+        <Point X="6.938" Y="3.812" />
+        <Point X="10.25" Y="3.812" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.227" Y="-0.307" Height="0.182" Width="1.037" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAQABAAAAAAIAAAEAAAAAAA=</HashCode>
+      <FileName>Project.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProjectStatus" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Members" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFDemo.Model.ProjectStatus">
+    <Position X="10.5" Y="4.75" Width="1.5" />
+    <AssociationLine Name="Projects" Type="EFDemo.Model.Project" FixedFromPoint="true">
+      <Path>
+        <Point X="10.5" Y="5.75" />
+        <Point X="7.5" Y="5.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQA=</HashCode>
+      <FileName>Project.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Projects" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFDemo.Model.ProjectMember">
+    <Position X="10.25" Y="3" Width="1.75" />
+    <AssociationLine Name="Employee" Type="EFDemo.Model.Employee" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="3.312" />
+        <Point X="6.953" Y="3.312" />
+        <Point X="6.953" Y="2.623" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.994" Y="0.201" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Project.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Employee" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EFDemo.Model.EmployeeProject">
+    <Position X="2.25" Y="3" Width="1.75" />
+    <AssociationLine Name="Project" Type="EFDemo.Model.Project" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4" Y="3.812" />
+        <Point X="6.406" Y="3.812" />
+        <Point X="6.406" Y="4.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.498" Y="0.641" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Project" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="EFDemo.Model.EmployeeTitle">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
